@@ -12,7 +12,7 @@
 		C53A9B221CA57ADE001CE3FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C53A9B211CA57ADE001CE3FC /* Assets.xcassets */; };
 		C53A9B251CA57ADE001CE3FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C53A9B231CA57ADE001CE3FC /* LaunchScreen.storyboard */; };
 		C53A9B2D1CA57AF1001CE3FC /* RecessTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53A9B2C1CA57AF1001CE3FC /* RecessTableViewCell.swift */; };
-		C53A9B2F1CA57BFA001CE3FC /* DemoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53A9B2E1CA57BFA001CE3FC /* DemoTableViewController.swift */; };
+		C53A9B2F1CA57BFA001CE3FC /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53A9B2E1CA57BFA001CE3FC /* DemoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		C53A9B241CA57ADE001CE3FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C53A9B261CA57ADE001CE3FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C53A9B2C1CA57AF1001CE3FC /* RecessTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecessTableViewCell.swift; sourceTree = "<group>"; };
-		C53A9B2E1CA57BFA001CE3FC /* DemoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoTableViewController.swift; sourceTree = "<group>"; };
+		C53A9B2E1CA57BFA001CE3FC /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +56,7 @@
 		C53A9B191CA57ADE001CE3FC /* RecessCell */ = {
 			isa = PBXGroup;
 			children = (
-				C53A9B2E1CA57BFA001CE3FC /* DemoTableViewController.swift */,
+				C53A9B2E1CA57BFA001CE3FC /* DemoViewController.swift */,
 				C53A9B2C1CA57AF1001CE3FC /* RecessTableViewCell.swift */,
 				C53A9B1A1CA57ADE001CE3FC /* AppDelegate.swift */,
 				C53A9B1E1CA57ADE001CE3FC /* Main.storyboard */,
@@ -140,7 +140,7 @@
 			files = (
 				C53A9B2D1CA57AF1001CE3FC /* RecessTableViewCell.swift in Sources */,
 				C53A9B1B1CA57ADE001CE3FC /* AppDelegate.swift in Sources */,
-				C53A9B2F1CA57BFA001CE3FC /* DemoTableViewController.swift in Sources */,
+				C53A9B2F1CA57BFA001CE3FC /* DemoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
