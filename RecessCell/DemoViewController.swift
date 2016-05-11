@@ -15,13 +15,13 @@ class DemoViewController: UIViewController {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("recessCell", forIndexPath: indexPath) as! RecessTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(RecessTableViewCell.identifier(), forIndexPath: indexPath) as! RecessTableViewCell
         
         if indexPath.row % 2 == 0 {
-            cell.setRecessCircle(20, position: CGPoint(x: 10, y: 10))
+            cell.setRecessCircle(30, position: CGPoint(x: 10, y: 5))
         }
         else {
-            cell.setRecessRect(CGRect(x: 20, y: 10, width: 20, height: 20))
+            cell.setRecessRect(CGRect(x: 80, y: 10, width: 60, height: 25))
         }
         
         return cell
