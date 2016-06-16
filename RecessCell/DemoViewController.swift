@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DemoViewController: UIViewController {
+class DemoViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 25
@@ -18,12 +18,16 @@ class DemoViewController: UIViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier(RecessTableViewCell.identifier(), forIndexPath: indexPath) as! RecessTableViewCell
         
         if indexPath.row % 2 == 0 {
-            cell.setRecessCircle(30, position: CGPoint(x: 10, y: 5))
+            cell.setRecessCircle(40, position: CGPoint(x: 10, y: 20))
         }
         else {
-            cell.setRecessRect(CGRect(x: 80, y: 10, width: 60, height: 25))
+            cell.setRecessRect(CGRect(x: 80, y: 20, width: 60, height: 25))
         }
         
         return cell
+    }
+
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 80.0
     }
 }
