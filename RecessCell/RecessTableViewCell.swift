@@ -16,26 +16,28 @@ class RecessTableViewCell: UITableViewCell {
         return "recessCell"
     }
     
-    func setRecessCircle(radius: CGFloat, position: CGPoint) {
-        let maskFrame = CGRectMake(position.x, position.y, radius, radius)
+    func setRecessCircle(_ radius: CGFloat, position: CGPoint) {
+        let maskFrame = CGRect(x: position.x, y: position.y, width: radius, height: radius)
         
         self.maskShapeLayer.frame = self.bounds
         self.maskShapeLayer.fillRule = kCAFillRuleEvenOdd
         
-        let pathRef = CGPathCreateMutable()
-        CGPathAddRect(pathRef, nil, self.bounds)
-        CGPathAddEllipseInRect(pathRef, nil, maskFrame)
+        let pathRef = CGMutablePath()
+        
+        pathRef.addRect(self.bounds)
+        pathRef.addEllipse(in: maskFrame)
         
         self.maskShapeLayer.path = pathRef
         self.layer.mask = maskShapeLayer
     }
     
-    func setRecessRect(frame: CGRect) {
+    func setRecessRect(_ frame: CGRect) {
         self.maskShapeLayer.fillRule = kCAFillRuleEvenOdd
         
-        let pathRef = CGPathCreateMutable()
-        CGPathAddRect(pathRef, nil, self.bounds)
-        CGPathAddRect(pathRef, nil, frame)
+        let pathRef = CGMutablePath()
+        
+        pathRef.addRect(self.bounds)
+        pathRef.addRect(frame)
 
         self.maskShapeLayer.path = pathRef
 
